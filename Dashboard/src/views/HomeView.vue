@@ -1,61 +1,63 @@
 <template>
-  <main class="home">
 
-    <!-- Cabeçalho da Home -->
-    <section class="home-header">
-      <h1>Bom dia!</h1>
-      <p>Cuide da sua saúde, um horário de cada vez.</p>
-    </section>
+  <div class = "layout">
 
-    <!-- Resumo do dia -->
-    <section class="home-summary">
+    <aside class = "sidebar">
 
-      <div class="summary-card">
-        <p>Próximo horário</p>
-        <h2>14:00</h2>
-      </div>
-
-      <div class="summary-card">
-        <p>Tomados hoje</p>
-        <h2>2</h2>
-      </div>
-
-      <div class="summary-card">
-        <p>Pendentes</p>
-        <h2>3</h2>
-      </div>
-
-    </section>
-
-    <!-- Próximo medicamento -->
-    <section class="next-medicine">
-
-      <h2>Próximo medicamento</h2>
-
-      <div class="medicine-card">
-
-        <div class="medicine-info">
-          <h3>Dipirona</h3>
-          <p>1 comprimido</p>
+      <div class ="marca">
+        <div class = "icone-marca">
+          💊
         </div>
 
-        <div class="medicine-time">
-          <p>14:00</p>
-          <span>Pendente</span>
+        <div>
+          <h2>MedHora</h2>
+          <p> Sua saúde em dia </p>
+
         </div>
-
-        <button type="button">
-          Marcar como tomado
-        </button>
-
       </div>
 
-    </section>
+      <nav class = "menu">
 
-  </main>
+        <a href ="#" class = "menu-item ativo">
+          <span>🏠</span>
+          <p>Inicio</p>
+        </a>
+
+        <a href ="#" class = "menu-item">
+          <span>📆</span>
+          <p>Hoje</p>
+        </a>
+
+        <a href ="#" class = "menu-item">
+          <span>🩺</span>
+          <p>Medicamentos</p>
+        </a>
+
+        <a href ="#" class = "menu-item">
+          <span>🕒</span>
+          <p>Histórico</p>
+        </a>
+
+      </nav>
+    <!-- Lembrar de adicionar as configurações de usuario futuramente -->
+    </aside>
+
+    <main class = "conteudo">
+
+      <header class ="cabeçalho">
+        
+        <div class = "saudacao">
+          <h1>Olá , (usuario)</h1>
+          <p>Aqui está um resumo do seu dia</p> 
+        </div>
+
+        <div class = "data">
+          <span></span>
+        </div>
+
+      </header>
+    </main>
+  </div>
+
 </template>
-
-<script setup>
-</script>
-
-<style src="../assets/styles/home.css"></style>
+<!-- MedHora  -->
